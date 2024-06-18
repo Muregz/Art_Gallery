@@ -1,0 +1,42 @@
+/* give the display property grid to the container */
+/* display : property */
+.grid-container {
+
+    display:grid
+    /* define rows using single quotation '' */
+    /* define what grid section you want to display */
+
+    grid-template-areas:
+    'navsection navsection navsection navsection navsection navsection'
+    'sidemenua sidemenua sidemenua sidemenua sidemenua sidemenua'
+    'bannersection bannersection bannersection bannersection bannersection bannersection'
+    'sidemenua sidemenua babbersection bannersection bannersection sidemenub'
+    'maingallery maingallery maingallery maingallery maingallery maingallery'
+    'footsection footsection footsection footsection footsection footsection'
+    ;
+}
+#navsection{
+    background-color: red;
+   grid-area:navsection;
+   
+}
+#bannersection{
+    background-color: purple;
+    grid-area:bannersection;
+}
+#sidemenua{
+background-color: aqua;
+grid-area:sidemenua;
+}
+#sidemenub{
+background-color: brown;
+grid-area: sidemenub;
+}
+#maingallery{
+    background-color: green;
+    grid-area:maingallery;
+}
+#footsection{
+    background-color: rgb(0, 0, 0);
+    grid-area:footsection;
+}
